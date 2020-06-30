@@ -1,6 +1,79 @@
 * {
   box-sizing: border-box;
 }
+ 
+.topStory{
+  height: auto;
+  border-width: thick;
+  border-style: double;
+  border-color:#BC08B0;
+  background-color:#E9D916; 
+}
+   
+.mainStory{
+  width: 100%;
+  padding: 20px;
+  background: url()0 -50px;
+}
+    
+.mainImage{
+  width: 100%;
+  padding: 20px;
+  background: url(img/ShannonAirport.jpg)0 -50px;
+}
+    
+.sideStory1 {
+  width: 100%;
+  padding: 20px;
+  background: url(img/kylie.jfif)0 -80px;
+}
+    
+.sideStory2 {
+  width: 100%;
+  padding: 20px;
+  background: url(img/evangeline.jpg)0 -80px;   
+}
+    
+.sideStory3 {
+  width: 100%;
+  padding: 20px;
+  background: url(img/tom.jpg)0 -80px;
+}
+    
+.sideStory {
+  width: 100%;
+  padding: 20px;
+  border-width: thick;
+  border-style: double;
+  border-color:#E9D916;
+  background-color:#BC08B0;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -70%);
+  font-size: 18px;
+}
+
+.signUp{
+  min-height: 250px;
+  border-width: thick;
+  border-style: double;
+  border-color:#BC08B0;
+  background-color:#E9D916;
+}    
+    
+
+.signUp input {
+    margin: 5px 250px;
+    border-radius: 20px;
+    text-align: center;
+    width: 50%;
+    height: 30px;
+    font-size: 12px;
+}
 
 /* Style the body */
 body {
@@ -35,6 +108,8 @@ body {
   display: flex;
 }
 
+
+
 /* Style the top navigation bar */
 .navbar {
   display: flex;
@@ -60,6 +135,7 @@ body {
 .row {  
   display: flex;
   flex-wrap: wrap;
+  min-height: 800px;;
 }
 
 /* Sidebar/left column */
@@ -67,6 +143,9 @@ body {
   flex: 30%;
   background-color: #f1f1f1;
   padding: 20px;
+  border-width: thick;
+  border-style: double;
+  border-color:#E9D916; 
 }
 
 /* Main column */
@@ -78,9 +157,12 @@ body {
 
 /* Footer */
 .footer {
-  padding: 20px;
   text-align: center;
   background: #BC08B0;
+  position: absolute;
+  bottom:auto;
+  width: 100%;
+  height: 100px;
 }
 
 img.one {

@@ -13,34 +13,51 @@
   transform: translate(-50%, -70%);
   font-size: 18px;
 }
-    
+ 
+.topStory{
+  height: auto;
+  border-width: thick;
+  border-style: double;
+  border-color:#BC08B0;
+  background-color:#E9D916; 
+}
+   
 .mainStory{
+  width: 100%;
+  padding: 20px;
+}
+    
+.mainImage{
   width: 100%;
   padding: 20px;
   background: url(img/ShannonAirport.jpg)0 -50px;
 }
     
-.kylie {
+.sideStory1 {
   width: 100%;
   padding: 20px;
   background: url(img/kylie.jfif)0 -80px;
 }
     
-.evangeline {
+.sideStory2 {
   width: 100%;
   padding: 20px;
   background: url(img/evangeline.jpg)0 -80px;   
 }
     
-.tom {
+.sideStory3 {
   width: 100%;
   padding: 20px;
   background: url(img/tom.jpg)0 -80px;
 }
     
-.vanessa {
+.sideStory {
   width: 100%;
   padding: 20px;
+  border-width: thick;
+  border-style: double;
+  border-color:#E9D916;
+  background-color:#BC08B0;
 }
 </style>
 </head>
@@ -48,11 +65,11 @@
 
 <!-- Header -->
 <div class="header">
-    <h1 style="color: crimson; font-size: 54px" >&nbsp;&nbsp;&nbsp;&nbsp;W</h1>
+    <h1 style="color: #E9D916; font-size: 54px" >&nbsp;&nbsp;&nbsp;&nbsp;W</h1>
     <h1 style= "font-size:54px">hat's&nbsp;&nbsp;~</h1>
-    <h1 style="color: crimson; font-size: 54px" >&nbsp;&nbsp;T</h1>
+    <h1 style="color: #E9D916; font-size: 54px" >&nbsp;&nbsp;T</h1>
     <h1 style= "font-size:54px">he&nbsp;&nbsp;~</h1>
-    <h1 style="color: crimson; font-size: 54px" >&nbsp;&nbsp;T</h1>
+    <h1 style="color: #E9D916; font-size: 54px" >&nbsp;&nbsp;T</h1>
     <h1 style="font-size:54px">ea?&nbsp;&nbsp;&nbsp;&nbsp;</h1>
     <img src="img/spillTheTea.png" style="max-height: 100%; max-width:10%">
     <p style="font-size:30px"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Local News & Gossip&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></p>
@@ -63,24 +80,23 @@
 
 <!-- Navigation Bar -->
 <div class="navbar">
-  <a href="#" style="text-align: left">Login</a>
+  <a href="#" style="text-align: left">Home</a>
   <a href="#" style="text-align: left">New This Week</a>
   <a href="#" style="text-align: left">Trending Now</a>
-  <a href="#">FAQ</a>
-  <a href="#">Contact Us</a>
+  <a href="login.html">Login</a>
 </div>
 
 <!-- The flexible grid (content) -->
 <div class="row">
   <div class="side">
     <h1 style="background-color: cyan">Trending Now</h1>
-    <h2 style="color: #cc00cc">Vanessa Hudgens Mocks Coronavirus</h2>
-    <div class="vanessa" style="height:auto">
+    <div class="sideStory" style="height:auto">
+        <h2 style="color: #E9D916; text-align: center"><em>Nando's is Coming To Limerick!</em></h2>
     <a href="https://www.bbc.com/news/newsbeat-51941986">
-        <img src="img/vanessa.jpg" alt="Vanessa Hudgens">
+        <img src="img/crescentSC.jpg" alt="Nando's" style="border: solid; border-color:#E9D916;">
     </a>
+      <p><strong>The popular south African restaurant chain is bringing it's food to the Crescent Shopping Centre.</strong></p>
     </div>
-    <p><b>Vanessa Hudgens has apologised for an "insensitive" Instagram video which seemed to question the seriousness of the coronavirus pandemic.</b><br>The 31-year-old went live on Instagram on the 15th of March, seemingly responding to Donald Trump's announcement that the coronavirus pandemic could stretch into July and August.</p>
     <h3 style="background-color: cyan">More Tea</h3>
       <p><b>Check out the links below for the latest gossip</b></p>
     <div class="tom" style="height:60px">
@@ -90,13 +106,21 @@
     <div class="kylie" style="height:60px">
     <a href="https://www.eonline.com/videos/304882/kylie-jenner-s-pregnancy-prepared-her-for-coronavirus-outbreak">Kylie&#39;s pregnancy prepared her for coronavirus outbreak</a></div>
   </div>
+    
   <div class="main">
     <h2 style="background-color: cyan; text-align: center;">TOP STORY</h2>
-    <h3>Public asked to support Shannon Airport as travel industry reopens</h3>
-    <div class="mainStory" style="height: 200px;">
-    </div>
-      <br>
-      <p style="text-align: center; border-width: thick; border-style: dashed; border-color: cyan;"><b>People are being asked to support Shannon Airport while the travel industry begins to reboot as restrictions are lifted. </b><br>
+      <div class="topStory">
+          <p id="dateAuthor" style="align-content: center;">
+          <script>
+        var d = new Date("June 28, 2020 11:13:00");
+        var a = new String("&nbsp;&nbsp;&nbsp;Author: Joe Bloggs");
+        document.getElementById("dateAuthor").innerHTML = d + a;
+          </script>
+          </p>
+          <h2 style="text-align: center; color: #BC08B0; background-color: cyan;"><b>Public asked to support Shannon Airport as travel industry reopens</b></h2>
+      <div class="mainImage" style="height: 200px;"></div>
+    <div class="mainStory" style="height: auto;">
+      <p style="text-align: center; border-width: thick; border-style: dashed; border-color: cyan; padding: inherit;"><b>People are being asked to support Shannon Airport while the travel industry begins to reboot as restrictions are lifted. </b><br>
             <br>The government is to consider recommendations by an interim report by the Aviation Recovery Taskforce on air travel.<br>
         It recommends that air travel restrictions should be lifted and the 14 day quarantine period should also be abandoned by July 1st.<br>
         Tony Brazil of Limerick Travel says even with these recommendations implemented Shannon Airport will still need a lot of support to recover.<br>
@@ -104,6 +128,11 @@
       <br>Being able to travel anywhere in Ireland.<br>
       <br>The re-opening of creches, childminding facilities and pre-schools as well as outdoor/indoor play areas.<br>
         <br>Passengers arriving from overseas are expected to self-isolate for 14 days and provide proof of where they were isolating.<br></p>
+        </div>
+          <button><b>Like</b></button>
+          <button><b>Edit</b></button>
+          <button><b>Delete</b></button>
+        </div>
     <br>
     <div class="advert" style="height:200px;">
         <img src="img/add%20space.jfif" alt="Add Space" style="height: 200px; width: 200px;">
@@ -112,11 +141,12 @@
         <img src="img/add%20space.jfif" alt="Add Space" style="height: 200px; width: 200px;">
         <img src="img/add%20space.jfif" alt="Add Space" style="height: 200px; width: 200px;">
     </div>
+    </div>
+    </div>
 
 <!-- Footer -->
 <div class="footer">
     <h2>FAQ<br>Contact Us</h2>
 </div>
-
 </body>
 </html>
