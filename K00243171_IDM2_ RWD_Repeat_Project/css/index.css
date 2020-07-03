@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 * {
   box-sizing: border-box;
 }
@@ -5,8 +7,8 @@
 .topStory{
   height: auto;
   border-width: thick;
-  border-style: double;
-  border-color:#BC08B0;
+  border-style: outset;
+  border-color:#52783e;
   background-color:#E9D916; 
 }
    
@@ -19,25 +21,35 @@
 .mainImage{
   width: 100%;
   padding: 20px;
-  background: url(img/ShannonAirport.jpg)0 -50px;
 }
     
-.sideStory1 {
+.story1 {
   width: 100%;
   padding: 20px;
-  background: url(img/kylie.jfif)0 -80px;
 }
     
-.sideStory2 {
+.story2 {
   width: 100%;
   padding: 20px;
-  background: url(img/evangeline.jpg)0 -80px;   
+  background: url(img/penneys.jpg)0 -80px;   
 }
     
-.sideStory3 {
+.story3 {
   width: 100%;
   padding: 20px;
-  background: url(img/tom.jpg)0 -80px;
+  background: url(img/pub.jpg)0 -80px;
+}
+
+.story4 {
+  width: 100%;
+  padding: 20px;
+  background: url(img/nandos.jpg)0 -80px;
+}
+
+.story5 {
+  width: 100%;
+  padding: 20px;
+  background: url(img/gunshot.jpg)0 -80px;
 }
     
 .sideStory {
@@ -46,7 +58,7 @@
   border-width: thick;
   border-style: double;
   border-color:#E9D916;
-  background-color:#BC08B0;
+  background-color:#52783e;
 }
 
 .center {
@@ -61,7 +73,7 @@
   min-height: 250px;
   border-width: thick;
   border-style: double;
-  border-color:#BC08B0;
+  border-color:#52783e;
   background-color:#E9D916;
 }    
     
@@ -102,7 +114,7 @@ body {
   left: 0;
   right: 0;
   align-items: center;
-  background: #BC08B0;
+  background: #52783e;
   color: floralwhite;
   text-shadow: 2px 2px #FF0000;
   display: flex;
@@ -148,17 +160,36 @@ body {
   border-color:#E9D916; 
 }
 
+.side h1 {
+    text-align: center;
+    background-color:cyan;
+    color:#E9D916;
+    text-shadow: 2px 2px #52783e;
+}
+
 /* Main column */
 .main {
   flex: 70%;
-  background-color: white;
+  background-color:#E9D916;
   padding: 20px;
+  border-top-style: outset;
+  border-color: #52783e;
+}
+
+.main h2 {
+    border-style: solid;
+    border-color: black;
+    text-align: center;
+    font-size: 60px;
+    color:#E9D916;
+    text-shadow: 2px 2px #52783e;
+    background-color: cyan;
 }
 
 /* Footer */
 .footer {
   text-align: center;
-  background: #BC08B0;
+  background: #52783e;
   position: absolute;
   bottom:auto;
   width: 100%;

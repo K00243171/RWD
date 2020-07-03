@@ -6,59 +6,6 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-.center {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -70%);
-  font-size: 18px;
-}
- 
-.topStory{
-  height: auto;
-  border-width: thick;
-  border-style: double;
-  border-color:#BC08B0;
-  background-color:#E9D916; 
-}
-   
-.mainStory{
-  width: 100%;
-  padding: 20px;
-}
-    
-.mainImage{
-  width: 100%;
-  padding: 20px;
-  background: url(img/ShannonAirport.jpg)0 -50px;
-}
-    
-.sideStory1 {
-  width: 100%;
-  padding: 20px;
-  background: url(img/kylie.jfif)0 -80px;
-}
-    
-.sideStory2 {
-  width: 100%;
-  padding: 20px;
-  background: url(img/evangeline.jpg)0 -80px;   
-}
-    
-.sideStory3 {
-  width: 100%;
-  padding: 20px;
-  background: url(img/tom.jpg)0 -80px;
-}
-    
-.sideStory {
-  width: 100%;
-  padding: 20px;
-  border-width: thick;
-  border-style: double;
-  border-color:#E9D916;
-  background-color:#BC08B0;
-}
 </style>
 </head>
 <body>
@@ -80,35 +27,25 @@
 
 <!-- Navigation Bar -->
 <div class="navbar">
-  <a href="#" style="text-align: left">Home</a>
-  <a href="#" style="text-align: left">New This Week</a>
-  <a href="#" style="text-align: left">Trending Now</a>
+  <a href="index.html" style="text-align: left">Home</a>
+  <a href="allnews.html" style="text-align: left">All News</a>
   <a href="login.html">Login</a>
 </div>
 
 <!-- The flexible grid (content) -->
 <div class="row">
   <div class="side">
-    <h1 style="background-color: cyan">Trending Now</h1>
+    <h1 >Trending Now</h1>
     <div class="sideStory" style="height:auto">
         <h2 style="color: #E9D916; text-align: center"><em>Nando's is Coming To Limerick!</em></h2>
-    <a href="https://www.bbc.com/news/newsbeat-51941986">
+    <a href="story4.html">
         <img src="img/crescentSC.jpg" alt="Nando's" style="border: solid; border-color:#E9D916;">
     </a>
       <p><strong>The popular south African restaurant chain is bringing it's food to the Crescent Shopping Centre.</strong></p>
     </div>
-    <h3 style="background-color: cyan">More Tea</h3>
-      <p><b>Check out the links below for the latest gossip</b></p>
-    <div class="tom" style="height:60px">
-    <a href="https://www.bbc.com/news/world-australia-51921513">Tom Hanks & Wife Get Coronavirus Treatment</a>
-    </div><br>
-    <div class="evangeline" style="height:60px"><a href="https://www.eonline.com/news/1132628/evangeline-lilly-dismisses-coronavirus-as-a-flu-and-says-she-isn-t-social-distancing">Evangeline Lilly refuses to self quarantine</a></div><br>
-    <div class="kylie" style="height:60px">
-    <a href="https://www.eonline.com/videos/304882/kylie-jenner-s-pregnancy-prepared-her-for-coronavirus-outbreak">Kylie&#39;s pregnancy prepared her for coronavirus outbreak</a></div>
-  </div>
-    
-  <div class="main">
-    <h2 style="background-color: cyan; text-align: center;">TOP STORY</h2>
+    </div>
+    <div class="main">
+    <h2>TOP STORY</h2>
       <div class="topStory">
           <p id="dateAuthor" style="align-content: center;">
           <script>
@@ -117,10 +54,10 @@
         document.getElementById("dateAuthor").innerHTML = d + a;
           </script>
           </p>
-          <h2 style="text-align: center; color: #BC08B0; background-color: cyan;"><b>Public asked to support Shannon Airport as travel industry reopens</b></h2>
-      <div class="mainImage" style="height: 200px;"></div>
+          <h2 style="font-size:35px;"><b>Public asked to support Shannon Airport as travel industry reopens</b></h2>
+      <div class="mainImage" style="height: 200px; background: url(img/ShannonAirport.jpg)0 -50px;"></div>
     <div class="mainStory" style="height: auto;">
-      <p style="text-align: center; border-width: thick; border-style: dashed; border-color: cyan; padding: inherit;"><b>People are being asked to support Shannon Airport while the travel industry begins to reboot as restrictions are lifted. </b><br>
+      <p style="text-align: center; border-width: thick; border-style: dashed; border-color:#52783e; padding: inherit;"><b>People are being asked to support Shannon Airport while the travel industry begins to reboot as restrictions are lifted. </b><br>
             <br>The government is to consider recommendations by an interim report by the Aviation Recovery Taskforce on air travel.<br>
         It recommends that air travel restrictions should be lifted and the 14 day quarantine period should also be abandoned by July 1st.<br>
         Tony Brazil of Limerick Travel says even with these recommendations implemented Shannon Airport will still need a lot of support to recover.<br>

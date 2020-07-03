@@ -27,10 +27,9 @@
 
 <!-- Navigation Bar -->
 <div class="navbar">
-  <a href="#" style="text-align: left">Home</a>
-  <a href="#" style="text-align: left">New This Week</a>
-  <a href="#" style="text-align: left">Trending Now</a>
-  <a href="#">Login</a>
+  <a href="index.html" style="text-align: left">Home</a>
+  <a href="allnews.html" style="text-align: left">All News</a>
+  <a href="login.html">Login</a>
 </div>
 
 <!-- The flexible grid (content) -->
@@ -39,28 +38,35 @@
       <h1 style="background-color: cyan">Trending Now</h1>
       <div class="sideStory" style="height:auto">
         <h2 style="color: #E9D916; text-align: center"><em>Nando's is Coming To Limerick!</em></h2>
-    <a href="https://www.bbc.com/news/newsbeat-51941986">
+    <a href="story4.html">
         <img src="img/crescentSC.jpg" alt="Nando's" style="border: solid; border-color:#E9D916;">
     </a>
       <p><strong>The popular south African restaurant chain is bringing it's food to the Crescent Shopping Centre.</strong></p>
     </div>
     </div>
   <div class="main">
-      <h2 style="text-align: center"><strong>Sign Up To Get All The Tea</strong></h2>
-    <div class="signUp" style="height: 200px;">
-        <input type="text" placeholder="Enter First Name" id="FirstName">
-      <br>
-        <input type="text" placeholder="Enter Last Name" id="LastName">
-      <br>
-        <input type="text" placeholder="Enter Email" id="Email">
-      <br>
-      <input type="text" placeholder="Enter UserName" id="UserName">
-      <br>
-      <input type="password" placeholder="Enter Password" id="Password">
-      <br>
-      <sub><button type="button" onclick="getInputValue();" style="margin: 5px 400px; width:200px">Sign Up</button></sub>
-    </div>
-      <script type="text/javascript" src="js/login.js"> </script>
+      <div class="topStory">
+          <p id="dateAuthor" style="align-content: center;">
+          <script>
+        var d = new Date("July 05, 2020 08:15:00");
+        var a = new String("&nbsp;&nbsp;&nbsp;Author: Virginia Woods");
+        document.getElementById("dateAuthor").innerHTML = d + a;
+          </script>
+          </p>
+          <h2 style="text-align: center; color: #BC08B0; background-color: cyan;"><b>Man found with gunshot wound in car</b></h2>
+      <div class="mainImage" style="height: 200px; background: url(img/gunshot.jpg)0 -150px; background-size: cover;"></div>
+    <div class="mainStory" style="height: auto;">
+      <p style="text-align: center; border-width: thick; border-style: dashed; border-color: cyan; padding: inherit;"><b>Gardai in Limerick appeal for witnesses after man found with gunshot wound in car</b><br>
+            <br>Gardaí in Limerick are appealing for witness following a shooting incident in Limerick City this evening.<br>
+            Shortly before 7pm Gardaí and emergency services were called to Castle Street in Limerick City where a man understood to be in his 40s was discovered in a car with a gunshot wound.<br>
+            He was removed from the scene by ambulance to University Hospital Limerick. His condition is described as stable.<br>
+            The scene is preserved for forensic and technical examination. No arrests have been made to date.<br>
+            Anyone with information is asked to contact <b><em>Henry Street Garda Station</em> 061-212 400</b> or the <b><em>Garda Confidential Line</em> 1800 666 111.</b><br></p>
+        </div>
+          <button><b>Like</b></button>
+          <button><b>Edit</b></button>
+          <button><b>Delete</b></button>
+        </div>
       <br>
       <br>
       <br>
