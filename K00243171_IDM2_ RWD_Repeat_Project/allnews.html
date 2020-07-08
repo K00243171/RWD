@@ -37,7 +37,7 @@
 <!-- The flexible grid (content) -->
 <div class="row">
   <div class="side">
-      <h1 style="background-color: cyan">Trending Now</h1>
+      <h1 style="background-color:#52783e">Trending Now</h1>
       <div class="sideStory" style="height:auto">
         <h2 style="color: #E9D916; text-align: center"><em>Nando's is Coming To Limerick!</em></h2>
     <a href="story4.html">
@@ -48,36 +48,94 @@
     </div>
   <div class="main">
       <div class="topStory">
-      <h2 style="text-align: center; border-style: dashed; border-color: #BC08B0; background-color: cyan;"><strong>ALL NEWS ARTICLES</strong></h2>
+      <h2 style="text-align: center;"><strong>ALL NEWS ARTICLES</strong></h2>
       <div class="mainImage" style="height: 250px; background: url(img/tealogo.png)-70px -170px; background-size: auto;"></div>
-          <p><b>Click the button to sort the articles by most recent</b></p>
-      <button onclick="sortList()">Sort</button>
-      <ul class="sort-list" style="font-size: 25px; color:#52783e">
-    <li style="padding-bottom:20px;"><div class="story1" style="height:150px; background: url(img/rubbish.jpg)"><time class="sort-item" datetime="01-06-2020 10:25"></time>
-        <a href="story1.html"><b>Community outraged at local dumping spot</b></a>
-        <p style="color:#E9D916;">Resident of Ballynanty 'fed up' over local dumping grounds</p>
-        </div></li>
-          <li style="padding-bottom: 20px"><div class="story2" style="height:150px; background: url(img/penneys.jpg);"><time class="sort-item" datetime="05-08-2020 12:55"></time><a href="story2.html"><b>Shoppers begin queuing up at 3am outside Penneys</b></a>
-              <p style="color:#E9D916;">Hundreds of eager shoppers queue outside Limerick Penneys from 3am</p></div></li>
-    <li style="padding-bottom: 20px"><div class="story3" style="height:150px; background: url(img/pub.jpg)"><time class="sort-item" datetime="25-06-2020 08:07"></time>
-        <a href="story3.html"><b>Hairdressers, pubs and restaurants are to e-open in Limerick</b></a>
-        <p style="color:#E9D916;">Hundreds of people are back at work today as pubs serving food, restaurants, hotels and hairdressers can trade fully.</p></div></li>
-    <li style="padding-bottom: 20px"><div class="story4" style="height:150px; background: url(img/nandos.jpg)"><time class="sort-item" datetime="17-07-2020 11:36"></time><a href="story4.html"><b>Nando's is Coming To Limerick!</b></a>
-        <p style="color:#E9D916;">The popular south African restaurant chain is bringing it's food to the Crescent Shopping Centre.</p></div></li>
-    <li style="padding-bottom: 20px"><div class="story5" style="height:150px; background: url(img/gunshot.jpg)"><time class="sort-item" datetime="05-07-2020 08:15"></time><a href="story5.html"><b>Man found with gunshot wound in car</b></a>
-        <p style="color:#E9D916;">Gardai in Limerick appeal for witnesses after man found with gunshot wound in car</p></div></li>
-      </ul>
-  </div>
+          <!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 5</div>
+    <a href="story1.html">
+    <img src="img/rubbish.jpg" style="width:100%">
+    <div class="text" style="font-size: 50px; color: #52783e;">Community outraged at local dumping spot</div>
+    </a>
       <br>
+      <br>
+      <br>
+      <br>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 5</div>
+    <a href="story2.html">
+    <img src="img/penneys.jpg" style="width:100%">
+    <div class="text" style="font-size: 50px; color: #52783e;">Shoppers begin queuing up at 3am outside Penney's</div>
+      </a>
+      <br>
+      <br>
+      <br>
+      <br>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 5</div>
+    <a href="story3.html">
+    <img src="img/pub.jpg" style="width:100%">
+    <div class="text" style="font-size: 50px; color: #52783e;">Hairdressers Pubs & Restaurants are to re-open in Limerick</div>
+      </a>
+      <br>
+      <br>
+      <br>
+      <br>
+  </div>
+    
+  <div class="mySlides fade">
+    <div class="numbertext">4 / 5</div>
+    <a href="story4.html">
+    <img src="img/nandos.jpg" style="width:100%">
+    <div class="text" style="font-size: 50px; color: #52783e;">Nando's is coming to Limerick!</div>
+      </a>
+      <br>
+      <br>
+      <br>
+      <br>
+  </div>
+    
+  <div class="mySlides fade">
+    <div class="numbertext">5 / 5</div>
+    <a href="story5.html">
+    <img src="img/gunshot.jpg" style="width:100%">
+    <div class="text" style="font-size: 50px; color: #52783e;">Man found with gunshot wound in car</div>
+      </a>
+      <br>
+      <br>
+      <br>
+      <br>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+    <script type="text/javascript" src="js/slideshow.js"> </script>
       <br>
       <br>
       <br>
     <div class="advert" style="height:200px; display: inline;">
-        <img src="img/add%20space.jfif" alt="Add Space" style="height: 200px; width: 200px;">
-        <img src="img/add%20space.jfif" alt="Add Space" style="height: 200px; width: 200px;">
-        <img src="img/add%20space.jfif" alt="Add Space" style="height: 200px; width: 200px;">
-        <img src="img/add%20space.jfif" alt="Add Space" style="height: 200px; width: 200px;">
-        <img src="img/add%20space.jfif" alt="Add Space" style="height: 200px; width: 200px;">
+        <img src="img/add%20space.jfif" alt="Add Space" style="height: 200px; width: 190px;">
+        <img src="img/add%20space.jfif" alt="Add Space" style="height: 200px; width: 190px;">
+        <img src="img/add%20space.jfif" alt="Add Space" style="height: 200px; width: 190px;">
+        <img src="img/add%20space.jfif" alt="Add Space" style="height: 200px; width: 190px;">
+        <img src="img/add%20space.jfif" alt="Add Space" style="height: 200px; width: 190px;">
     </div>
     </div>
     </div>
